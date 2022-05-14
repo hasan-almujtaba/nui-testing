@@ -15,7 +15,7 @@
       "import": "./dist/nui-testing.es.js",
       "require": "./dist/nui-testing.umd.js"
     },
-    "./dist/style.css": "./dist/style"
+    "./dist/style.css": "./dist/style.css"
   },
   "types": "./dist/types/index.d.ts",
   "dependencies": {

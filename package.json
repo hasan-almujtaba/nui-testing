@@ -1,11 +1,21 @@
 {
   "name": "nui-testing",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
     "preview": "vite preview"
+  },
+  "files": ["dist"],
+  "main": "./dist/nui-testing.umd.js",
+  "module": "./dist/nui-testing.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/nui-testing.es.js",
+      "require": "./dist/nui-testing.umd.js"
+    },
+    "./dist/style.css": "./dist/style"
   },
   "types": "./dist/types/index.d.ts",
   "dependencies": {

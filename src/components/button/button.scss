@@ -1,0 +1,161 @@
+.n-ui-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  height: 40px;
+  transition: all 0.3s;
+  border-radius: 100px;
+  text-transform: $btn-text-transform;
+  font-weight: $btn-font-weight;
+
+  // Filled Style
+  &-filled {
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 0px 1px 3px 1px #00000026;
+      box-shadow: 0px 1px 2px 0px #0000004d;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  // Outlined
+  &-outlined {
+    // Outlined Primary
+    &.n-ui-button-primary {
+      border: 1px solid $primary;
+      background-color: $white;
+      color: $primary;
+
+      &:hover {
+        background-color: rgba(103, 80, 164, 0.08);
+      }
+
+      &:focus {
+        background-color: rgba(103, 80, 164, 0.12);
+      }
+    }
+
+    // Outlined Secondary
+    &.n-ui-button-secondary {
+      border: 1px solid $secondary;
+      background-color: $white;
+      color: $secondary;
+
+      &:hover {
+        background-color: rgba(103, 80, 164, 0.08);
+      }
+
+      &:focus {
+        background-color: rgba(103, 80, 164, 0.12);
+      }
+    }
+
+    // Outlined Tertiary
+    &.n-ui-button-tertiary {
+      border: 1px solid $tertiary;
+      background-color: $white;
+      color: $tertiary;
+
+      &:hover {
+        background-color: rgba(103, 80, 164, 0.08);
+      }
+
+      &:focus {
+        background-color: rgba(103, 80, 164, 0.12);
+      }
+    }
+
+    // Outlined Tertiary
+    &.n-ui-button-tertiary {
+      background-color: $white;
+      color: $tertiary;
+
+      &:hover {
+        background-color: rgba(103, 80, 164, 0.08);
+      }
+
+      &:focus {
+        background-color: rgba(103, 80, 164, 0.12);
+      }
+    }
+  }
+
+  // Text
+  &-text {
+    padding: 10px 12px;
+
+    // Text Primary
+    &.n-ui-button-primary {
+      background-color: $white;
+      color: $primary;
+
+      &:hover {
+        color: $primary;
+        background-color: rgba(103, 80, 164, 0.08);
+      }
+
+      &:focus {
+        color: $primary;
+        background-color: rgba(103, 80, 164, 0.12);
+      }
+    }
+
+    // Text Secondary
+    &.n-ui-button-secondary {
+      background-color: $white;
+      color: $secondary;
+
+      &:hover {
+        color: $secondary;
+        background-color: rgba(103, 80, 164, 0.08);
+      }
+
+      &:focus {
+        color: $secondary;
+        background-color: rgba(103, 80, 164, 0.12);
+      }
+    }
+
+    // Text Tertiary
+    &.n-ui-button-tertiary {
+      background-color: $white;
+      color: $tertiary;
+
+      &:hover {
+        color: $tertiary;
+        background-color: rgba(103, 80, 164, 0.08);
+      }
+
+      &:focus {
+        color: $tertiary;
+        background-color: rgba(103, 80, 164, 0.12);
+      }
+    }
+  }
+
+  // Elevated
+  &-elevated {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+      0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  // Primary Color
+  &-primary {
+    background-color: $primary;
+    color: $white;
+  }
+
+  // Primary Color
+  &-secondary {
+    background-color: $secondary;
+    color: $white;
+  }
+
+  &-tertiary {
+    background-color: $tertiary;
+    color: $white;
+  }
+}
